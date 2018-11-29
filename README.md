@@ -1,2 +1,2 @@
 # microserviceclient
-a smae micro service client project
+a sample micro service client project
