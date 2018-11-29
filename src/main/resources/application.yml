@@ -1,0 +1,27 @@
+eureka:
+  client:
+      enabled: true
+      fetch-registry: true
+      register-with-eureka: true
+      serviceUrl:
+        defaultZone: http://admin:admin@localhost:8761/eureka/
+
+
+ribbon:
+  eureka:
+      enabled: true
+
+spring:
+  application:
+        name: DemoJob
+  datasource:
+    url: jdbc:mysql://localhost:3308/JobUpload?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: Comcast99!
+  jpa:
+    database: MYSQL
+    hibernate.ddl-auto: create
+
+server:
+  port: 8088
+
